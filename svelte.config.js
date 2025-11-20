@@ -1,16 +1,8 @@
-import adapter from '@sveltejs/adapter-auto';
-import adapter from '@sveltejs/adapter-vercel';
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-  kit: {
-    adapter: adapter()
-  }
-};
+import vercelAdapter from '@sveltejs/adapter-vercel';
 
 export default {
   kit: {
-    adapter: adapter({
+    adapter: vercelAdapter({
       runtime: 'nodejs20.x'
     })
   }
